@@ -1,0 +1,47 @@
+
+:root{
+  --emerald-50:#ecfdf5;
+  --emerald-100:#d1fae5;
+  --emerald-500:#10b981;
+  --emerald-600:#059669;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --bg:#f8fafc;
+  --white:#ffffff;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji;
+  color:var(--text);
+  background: linear-gradient(to bottom, #f9fafb, #ffffff);
+}
+.container{max-width:720px;margin:0 auto;padding:0 16px}
+.shadow-sm{box-shadow:0 1px 2px rgba(0,0,0,.06)}
+.shadow{box-shadow:0 4px 14px rgba(0,0,0,.08)}
+.rounded{border-radius:14px}
+.rounded-lg{border-radius:18px}
+.rounded-full{border-radius:9999px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:18px;border:none;background:var(--emerald-600);color:#fff;font-weight:600;text-decoration:none}
+.btn:hover{background:#047857}
+.btn-small{padding:6px 10px;font-size:12px}
+.text-center{text-align:center}
+.text-muted{color:var(--muted)}
+.tag{display:flex;align-items:center;justify-content:center;gap:6px;font-size:12px;padding:10px;border:1px solid #eef2f7;border-radius:16px;background:#fff}
+header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(8px);background:rgba(255,255,255,.8);border-bottom:1px solid #f2f2f2;z-index:40}
+nav{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+.hero h1{font-size:28px;line-height:1.2;margin:14px 0 6px}
+.hero p{font-size:14px;color:var(--muted);margin:0 auto;max-width:52ch}
+.grid{display:grid;gap:12px}
+.grid-3{grid-template-columns: repeat(3, 1fr)}
+.grid-2{grid-template-columns: repeat(2, 1fr)}
+@media (min-width:640px){ .hero h1{font-size:34px} }
+.card{background:#fff;border:1px solid #f1f5f9;border-radius:18px;padding:14px}
+.example-icon{width:36px;height:36px;border-radius:12px;background:var(--emerald-50);display:flex;align-items:center;justify-content:center;margin-right:10px;flex:0 0 auto}
+.example{display:flex;gap:10px}
+details{padding:12px}
+details+details{border-top:1px solid #f1f5f9}
+.wa-float{position:fixed;bottom:16px;right:16px;width:52px;height:52px;background:var(--emerald-600);display:flex;align-items:center;justify-content:center;border-radius:9999px;box-shadow:0 10px 25px rgba(16,185,129,.45);z-index:50}
+.wa-float svg{width:28px;height:28px;fill:#fff}
+footer{padding:30px 0;color:#6b7280;font-size:12px;text-align:center}
